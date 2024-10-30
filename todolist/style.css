@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+.main-todo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#inp {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.todosContainer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: box-shadow 0.2s ease;
+}
+
+.todo:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    flex: 1;
+}
+
+.todo button {
+    padding: 8px 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.todo button:nth-child(2) {
+    background-color: #dc3545;
+}
+
+.todo button:nth-child(3) {
+    background-color: #28a745;
+}
+
+.todo button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .main-todo {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #inp {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .todo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo button {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+}
